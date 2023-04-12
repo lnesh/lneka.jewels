@@ -1,0 +1,238 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+/*div {
+  font-size: 30px;
+  color: rgba(165, 4, 4, 0.733);
+  text-decoration: none;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif, Times,
+    serif, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  height: 600px;
+  text-align: center;
+  text-transform: capitalize;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}*/
+
+#head {
+  background: linear-gradient(peachpuff, rgb(219, 126, 95));
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.nav-bar {
+  width: 85%;
+  margin: auto;
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  width: 130px;
+  cursor: pointer;
+}
+
+.nav-bar ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  position: relative;
+}
+
+.nav-bar ul li a {
+  text-decoration: none;
+  color: #ed644ca8;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-size: large;
+  text-transform: uppercase;
+}
+
+.nav-bar ul li::after {
+  content: "";
+  height: 3px;
+  width: 0;
+  background: rgba(255, 0, 0, 0.699);
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+
+.nav-bar ul li:hover::after {
+  width: 100%;
+}
+
+.content {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 100px;
+  text-align: center;
+  color: rgb(194, 13, 13);
+  text-transform: capitalize;
+  font-family: "WindSong", cursive;
+}
+
+.content p {
+  font-size: 20px;
+  font-family: "Prompt", sans-serif;
+  margin: 5px;
+  color: antiquewhite;
+}
+
+.btn2 {
+  width: 200px;
+  padding: 15px 0;
+  text-align: center;
+  margin: 20px 10px;
+  border-radius: 25px;
+  font-weight: bold;
+  border: 2px solid rgb(194, 13, 13);
+  background: transparent;
+  color: antiquewhite;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.instaBtn{
+    width: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    background-color: rgb(194, 13, 13);
+    border: 2px solid rgb(194, 13, 13);
+    outline: none;
+}
+
+.instaBtn:hover{
+  background-color: rgb(146, 12, 12);
+  border-color: rgb(146, 12, 12);
+  transition: 0.5s;
+}
+
+.sl-id {
+  background: rgb(194, 13, 13);
+  height: 100%;
+  width: 0%;
+  border-radius: 25px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: -1;
+  transition: 0.5s;
+}
+
+button:hover span {
+  width: 100%;
+}
+
+.btn2:hover {
+  border: none;
+}
+
+.title {
+  font-size: 60px;
+  line-height: 100px;
+  font-weight: bold;
+  height: 100px;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.slider {
+  color: antiquewhite;
+  margin-left: 12px;
+  box-sizing: border-box;
+  animation: slider 9s linear infinite;
+}
+
+@keyframes slider {
+  0% {
+    margin-top: -400px;
+  }
+  5% {
+    margin-top: -200px;
+  }
+  30% {
+    margin-top: -200px;
+  }
+  35% {
+    margin-top: 0px;
+  }
+  65% {
+    margin-top: 0px;
+  }
+  70% {
+    margin-top: 200px;
+  }
+  100% {
+    margin-top: 200px;
+  }
+}
+
+.sub-menu-1 {
+  display: none;
+}
+
+
+.categories{
+  width: 100%;
+  font-size: 50px;
+  font-family: 'prompt', sans-serif ;
+  color: white ;
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  padding-left: 2vh;
+  background-color: rgb(146, 12, 12, .7) ;
+  
+}
+
+.img0 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(88, 184, 92, 0.3), rgba(221, 173, 69, 0.3)),
+    url(/pictures/ear5.jpg) center/cover fixed no-repeat;
+  text-decoration: none;
+}
+
+.img1 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(120, 165, 48, 0.3), rgba(128, 55, 26, 0.3)),
+    url(/pictures/ring2.jpg) center/cover fixed no-repeat;
+}
+
+.img2 {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background: linear-gradient(rgba(182, 123, 89, 0.3), rgba(238, 106, 54, 0.3)),
+    url(/pictures/ear2.jpg) center/cover fixed no-repeat;
+}
