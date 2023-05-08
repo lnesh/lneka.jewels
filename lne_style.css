@@ -204,10 +204,10 @@ button:hover span {
   width: 100%;
   font-size: 50px;
   font-family: 'prompt', sans-serif ;
-  color: white ;
+  color: antiquewhite ;
   padding-top: 5vh;
   padding-bottom: 3vh;
-  padding-left: 2vh;
+  padding-left: 10vh;
   background-color: rgb(146, 12, 12, .7) ;
   
 }
@@ -235,4 +235,9 @@ button:hover span {
   height: 100vh;
   background: linear-gradient(rgba(182, 123, 89, 0.3), rgba(238, 106, 54, 0.3)),
     url(/pictures/ear2.jpg) center/cover fixed no-repeat;
+}
+
+.bi-arrow-right-circle-fill{
+  margin-left: 40px;
+  color: antiquewhite;
 }
